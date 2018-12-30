@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="2"
+    android:padding="4dp"
+    tools:context=".sample.MainActivity">
+
+    <FrameLayout style="@style/smallFrame">
+
+        <com.otus.alexshr.home.customviews.SquareImageView
+            style="@style/squareImageView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+    <TextView
+        style="@style/commentTextView"
+        android:text="layout_width=0dp" />
+
+    <FrameLayout style="@style/smallFrame">
+
+        <com.otus.alexshr.home.customviews.SquareImageView
+            style="@style/squareImageView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:hwRatio="1.5" />
+
+    </FrameLayout>
+
+    <TextView
+        style="@style/commentTextView"
+        android:text="layout_width=0dp, hwRatio=1.5" />
+
+    <FrameLayout style="@style/bigFrame">
+
+        <com.otus.alexshr.home.customviews.SquareImageView
+            style="@style/squareImageView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+    </FrameLayout>
+
+    <TextView
+        style="@style/commentTextView"
+        android:text="layout_height=0dp" />
+
+    <FrameLayout style="@style/bigFrame">
+
+        <com.otus.alexshr.home.customviews.SquareImageView
+            style="@style/squareImageView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:hwRatio="1.5" />
+    </FrameLayout>
+
+    <TextView
+        style="@style/commentTextView"
+        android:text="layout_height=0dp; hwRatio=1.5" />
+
+    <FrameLayout style="@style/bigFrame">
+
+        <com.otus.alexshr.home.customviews.CircleImageView
+            android:id="@+id/circleImageView"
+            style="@style/testImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:background_color="@android:color/transparent"
+            app:border_color="?colorPrimary"
+            app:border_width="2dp" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingLeft="16dp">
+
+        <TextView
+            android:id="@+id/paddingTv"
+            style="@style/controlTextView"
+            android:text="Test padding" />
+
+        <TextView
+            android:id="@+id/borderWidthTv"
+            style="@style/controlTextView"
+
+            android:text="Test border width" />
+
+        <TextView
+            android:id="@+id/borderColorTv"
+            style="@style/controlTextView"
+
+            android:text="Test border color" />
+
+        <TextView
+            android:id="@+id/backgroundColorTv"
+            style="@style/controlTextView"
+
+            android:text="Test background color" />
+
+        <TextView
+            android:id="@+id/drawableTv"
+            style="@style/controlTextView"
+
+            android:text="Test Image" />
+
+    </LinearLayout>
+
+</GridLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CustomView_HomeTask</string>
+    <string name="scale_type_not_supported">ScaleType %s is not supported.</string>
+    <string name="illegal_scale_type">Illegal scaleType: only \'CENTER_CROP\' and \'CENTER_INSIDE\' are supported</string>
+</resources>
